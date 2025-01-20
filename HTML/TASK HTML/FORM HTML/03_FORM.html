@@ -13,19 +13,19 @@
         <tr>
             <td>
                 <label for="">Firstname</label>
-                <input type="text" placeholder="Your name">
+                <input type="text" placeholder="Your name" pattern="[a-zA-Z]{3,10}" required>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="">Middlename</label>
-                <input type="text" placeholder="Middlename">
+                <input type="text" placeholder="Middlename" pattern="[a-zA-Z]{3,10}" required>
             </td>
         </tr>
         <tr>
             <td>
                 <label for="">Lastname</label>
-                <input type="text" placeholder="Lastname">
+                <input type="text" placeholder="Lastname" pattern="[a-zA-Z]{3,10}" required>
             </td>
         </tr>
         <tr>
@@ -66,7 +66,7 @@
         <tr>
             <td>
                 <label for="">Phone:</label>
-                <input type="tel" value="+91" placeholder="" width="">
+                <input type="tel" value="+91" placeholder="" width="" pattern="[]">
                 <input type="tel">
             </td>
         </tr>
