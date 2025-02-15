@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            /* background-color: aqua; */
+            /* background-image: url(./img/03.jpg); */
+            margin: 50px auto;
+            /* transform: scaleX(1.2); */
+            /* opacity: 0.5; */
+        }
+        .main2{
+            height: 500px;
+            width: 500px;
+            border: 2px;
+            background-image: url(./img/03.jpg);
+            transform: scaleX(1.2);
+            opacity: 0.5;
+        }
+        .main:hover .main2{
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main2"></div>
+    </div>
+</body>
+</html>

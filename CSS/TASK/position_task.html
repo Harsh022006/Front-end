@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 300px;
+            background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            margin: 250px auto;
+            border: 2px solid;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+            
+         }
+         .main2{
+            height: 200px;
+            width: 300px;
+            /* border: 2px solid; */
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.241);
+            top: 100%;
+            right: 100%;
+            transition: .5s;
+         }
+         .main3{
+            height: 200px;
+            width: 300px;
+            /* border: 2px solid; */
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.241);
+            bottom: 100%;
+            left: 100%;
+            transition: .5s;
+         }
+         .main:hover .main2{
+            top: 0%;
+            right: 0%;
+         }
+         .main:hover .main3{
+            bottom: 0%;
+            left: 0%;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">FASHION
+        <div class="main2"> </div>
+        <div class="main3"></div>   
+    </div>
+</body>
+</html>
