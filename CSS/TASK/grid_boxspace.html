@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 200px;
+            gap: 20px;
+        }
+        .box{
+            border: 2px solid;
+            /* background-image:url(./img/01.jpg); */
+            /* background-size: 100% 100%; */
+        }
+        #box1{
+            background-image: url(./img/hq720.jpg);
+            background-size: 100% 100%;
+        }
+        #box2{
+            background-image: url(./img/04.jpg); 
+            background-size: 100% 100%;
+        }
+        #box3{
+            background-image: url(./img/06.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #box4{
+            background-image: url(./img/02.webp);
+            background-size: 100% 100%;
+        }
+        #box5{
+            grid-column: 3;
+            grid-row: 2;
+            background-image: url(./img/03.jpg);
+            background-size: 100% 100%;
+        }
+        #box6{
+            grid-column: 1;
+            grid-row: 3;
+            background-image: url(./img/7.jpg);
+            background-size: 100% 100%;
+        }
+        #box7{
+            grid-column: 2;
+            grid-row: 3;
+            background-image: url(./img/01.jpg);
+            background-size: 100% 100%;
+        }
+        #box8{
+            grid-column: 3;
+            grid-row: 3; 
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3wxJ0c-jC6VcDASO9aiDWD9zWAeJLKrS5gg&s);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+</div>
+</body>
+</html>
