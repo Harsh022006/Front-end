@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 450px;
+            width: 300px;
+            border: 2px solid;
+        }
+
+        .main2 {
+            height: 290px;
+            width: 300px;
+            margin: 0%;
+            /* background-color: aqua; */
+            position: relative;
+        }
+
+        .main3{
+            height: 230px;
+            width: 230px;
+            background: url();
+            size: 100% 100%;
+            /* background-repeat: no-repeat; */
+            /* margin: 25px auto; */
+            margin: 30px 30px;
+            /* background: black; */
+            position: absolute;
+        }
+        .main4{
+            height: 40px;
+            width: 300px;
+            color: white;
+            background: black;
+            top: 0%;
+            opacity: 0;
+            transition: .5s;
+            position: absolute;
+            text-align: center;
+        }
+        .main2:hover .main4{
+            top: 86%;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="main3"></div>
+            <div class="main4">QUICK VIEW</div>
+        </div>
+        <div class="main5">hi</div>
+    </div>
+</body>
+
+</html>
