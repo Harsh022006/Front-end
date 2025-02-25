@@ -1,13 +1,13 @@
 .main{
     display: flex;
     flex-wrap: wrap
-    position: relative;
+    /* position: relative; */
 }
 .main .box {
-    /* height: 10px; */
+    height: 25px;
     width: 25%;
     background: black;
     color: white;
     text-align: center;
     font-style: bold;
-}
+    }
