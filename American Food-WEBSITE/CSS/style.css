@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utility class */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background-color: #3d5f00;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: white;
+}
+
+.icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.main-content {
+    background-image: url(/images/header_image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.data {
+    color: #3d5f00;
+    /* padding: 70px 0; */
+    letter-spacing: 0px;
+    padding: 120px 0;
+    transform: translateX(-40px);
+}
+
+.data .h1-header {
+    font-size: 67px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Alegreya Sans";
+}
+
+.data .h3-header {
+    font-size: 54px;
+    font-weight: 500;
+    font-family: "Alegreya Sans";
+}
+
+.data .hr {
+    width: 370px;
+    margin: 10px 0;
+}
+
+.data .p-header {
+    width: 35%;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 20px 0;
+}
+
+.data .btn-header {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.data .btn-icon {
+    padding: 10px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+/* header end */
+
+/* about section start */
+#about {
+    padding: 30px 0;
+}
+
+.aboutus {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.aboutus .h2-about {
+    margin-top: 8%;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.aboutus .p-about {
+    font-size: 25px;
+    font-weight: 400;
+    width: 53%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.main-about .row {
+    display: flex;
+    gap: 90px;
+    margin: 90px 0;
+}
+
+.row .col {
+    width: 50%;
+    /* border: 3px solid; */
+
+}
+
+.col .h4-about {
+    font-size: 48px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.col .para1 {
+    width: 85%;
+    margin: 30px 0;
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.col .para2 {
+    width: 85%;
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.col .btn-header {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.col .btn-icon {
+    padding: 10px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 10px 0 10px 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.abouts {
+    background: linear-gradient(rgba(143, 146, 59, 0.5), rgba(143, 146, 59, 0.5)), url("/images/about1.png");
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.abouts .iconx {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    color: red;
+    transform: translate(-50%, -50%);
+}
+
+/* about section end */
+
+/* <!-- service section start --> */
+
+.service {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+}
+
+.service .h2-service {
+    margin-top: 1%;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.service .p-service {
+    font-size: 25px;
+    font-weight: 400;
+    width: 53%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.main-service {
+    margin: 30px 0;
+}
+
+.main-service .row {
+    display: flex;
+    gap: 70px;
+}
+
+.main-service .row .col7 {
+    width: 65%;
+}
+
+.main-service .row .col3 {
+    width: 35%;
+}
+
+.col7 .service-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-data {
+    font-size: 46px;
+    line-height: 129px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+
+}
+
+.p-service {
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 20px 0;
+    width: 90%;
+}
+
+.btn-service {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 20px 0 20px 0;
+    color: white;
+}
+
+.main-service .row {
+    margin: 50px 0;
+}
+
+/* <!-- service section end --> */
+
+/* section-4 start */
+#section4 {
+    margin-top: 7%;
+    background-image: url(/images/section-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.section4-data {
+    color: #3d5f00;
+    font-family: "Roboto";
+    transform: translateX(-20px);
+}
+
+.section4-data .h3-section {
+    font-size: 33px;
+    font-weight: 500;
+    padding-top: 120px;
+
+}
+
+.section4-data .h2-section {
+    font-size: 58px;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+.section4-data .h3-section2 {
+    font-size: 33px;
+    letter-spacing: 14px;
+    font-weight: 500;
+}
+
+.section4-data .p-section {
+    width: 45%;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.section4-data .btn-section {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* section-4 end */
+
+/* <!-- price start --> */
+
+.price-content {
+    text-align: center;
+    color: #3d5f00;
+    font-family: "Roboto";
+    margin: 80px 0;
+}
+
+.price .h5-price {
+    margin-top: 90px;
+    font-size: 50px;
+    color: #3d5f00;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price .p-price {
+    width: 53%;
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 0 auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.price-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.price-cards .price-card1 {
+    width: 33.33%;
+    /* border: 2px solid; */
+}
+
+.price-card1 .price-cardup {
+    background-color: #608b14;
+    text-align: center;
+    font-family: "Roboto";
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.price-cardup .price-h3 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.price-cardup .price-h2 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.price-card1 .price-carddown {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.price-carddown .price-p {
+    font-size: 29px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #3d5f00;
+    margin: 10px 0;
+}
+
+.price-carddown .btn-price {
+    border-radius: 15px 0 15px 0;
+    background-color: #3d5f00;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    margin: 30px 0;
+}
+
+.price-cards .price-card2 {
+    width: 33.33%;
+    border: 2px solid;
+}
+
+.price-cards .price-card3 {
+    width: 33.33%;
+    border: 2px solid;
+}
+
+/* <!-- price end --> */
+
+/* section-6 start */
+#section-6 {
+    background: url(/images/section6.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 100px 0;
+    text-align: right;
+}
+
+.section4-data {
+    color: #3d5f00;
+    font-family: "Roboto";
+    /* transform: translateX(-20px); */
+}
+
+.section4-data .h3-section {
+    font-size: 33px;
+    font-weight: 500;
+    padding-top: 120px;
+
+}
+
+.section4-data .h2-section {
+    font-size: 58px;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+.section4-data .h3-section2 {
+    font-size: 33px;
+    letter-spacing: 14px;
+    font-weight: 500;
+}
+
+.section4-data .p-section2 {
+    width: 45%;
+    font-size: 25px;
+    font-weight: 400;
+    transform: translateX(750px);
+    margin: 40px 0;
+}
+
+.section4-data .btn-section {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3d5f00;
+    border-radius: 20px 0 20px 0;
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* section-6 end */
+
+/* blog start */
+
+#blog {
+    margin: 40px 0;
+}
+
+.blog .h5-price {
+    margin-top: 90px;
+    font-size: 50px;
+    color: #3d5f00;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.blog .p-price {
+    width: 53%;
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 30px auto;
+    /* margin-bottom: 80px; */
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.last-section .last {
+    /* width: 33.33%; */
+    display: flex;
+    gap: 50px;
+}
+
+.last .last1 {
+    width: 33.33%;
+}
+
+.last .last2 {
+    width: 33.33%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.last2 .h3-last {
+    font-size: 33px;
+    color: #3d5f00;
+    font-weight: 500;
+    font-family: "Roboto";
+    margin-top: 30px;
+}
+
+.last2 .btn-last {
+    border-radius: 15px 0 15px 0;
+    background-color: #3d5f00;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    margin: 30px 0;
+}
+
+.last2 .p-last {
+    font-size: 25px;
+    color: #3d5f00;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 40px 0;
+}
+
+.last .last3 {
+    width: 33.33%;
+}
+
+
+
+/* blog end */
+
+/* footer start */
+#Footer {
+    margin-top: 8%;
+    padding: 50px 0;
+    background-color: #3d5f00;
+}
+
+#Footer .row {
+    display: flex;
+}
+
+#Footer .row .col-4 {
+    width: 40%;
+}
+
+#Footer .row .col-6 {
+    width: 60%;
+}
+
+.col-6 .row .col {
+    width: 33.33%;
+}
+
+.footer .h2-footer {
+    font-size: clamp(18px, 3vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.footer .ul-footer {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.ul-footer .li-footer {
+    margin: 10px 0;
+}
+
+.ul-footer .li-footer .a-footer {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.footer .p-footer {
+
+    font-size: clamp(18px, 3vw, 24px);
+    color: #ffffff;
+    width: 80%;
+    margin: 20px 0;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.footer-icon i {
+    font-size: clamp(18px, 3vw, 24px);
+    color: white;
+    margin: 0 5px;
+}
+
+/* footer end */

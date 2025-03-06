@@ -15,15 +15,18 @@
         li::after{
             content:"" ;
             height: 5px;
-            width: 0%;
+            /* width: 0%; */
+            width: 100%;
             background:aqua;
             position: absolute;
             top: 100%;
             left: 0%;
             transition: .5s;
+            scale: 0;
         }
         li:hover::after{
-            width: 100%;
+            /* width: 100%; */
+            scale: 1;
         }
     </style>
 </head>
