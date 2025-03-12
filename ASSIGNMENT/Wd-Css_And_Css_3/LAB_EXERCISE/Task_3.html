@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    main {
+      display: flex;
+      flex: 1; /* Main area will grow to take available space */
+      flex-direction: row; /* Set layout to row */
+      justify-content: space-between; /* Space out sidebar and content */
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #f4f4f4;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      flex: 1; /* Content will take the remaining space */
+      background-color: #f9f9f9;
+      padding: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column; /* Stack the sidebar and content vertically */
+        padding: 10px;
+      }
+
+      .sidebar {
+        width: 100%; /* Sidebar will take full width on small screens */
+        margin-bottom: 20px;
+      }
+
+      .content {
+        width: 100%; /* Content takes full width on small screens */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Links, navigation, or any other sidebar content can go here.</p>
+    </div>
+    <div class="content">
+      <h2>Main Content</h2>
+      <p>This is where the main content goes. It will adjust according to screen size.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>
