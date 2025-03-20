@@ -1,0 +1,390 @@
+/* @media only screen and (max-width:1160px) {
+    
+}
+@media only screen and (max-width:992px) {
+    .lists{
+        display: none;
+    }
+    .icon i{
+        display: none;
+    }
+    .icon .bar{
+        display: block;
+    }
+    .data .p-data {
+        width: 80%;
+        margin-left: 100px;
+    }
+    .popular .p-popular{
+        margin-left: 100px;
+        width: 80%;
+    }
+    .popular-cards .cards {
+        margin-top: 60px;
+        display: block;
+    }
+    .cards .card1 {
+        margin-left: 25%;
+        /* border: 2px solid; */
+        /* width: 55%;
+    }
+    .cards .card2 {
+        margin: 10% 0;
+        margin-left: 25%;
+        /* border: 2px solid; */
+        /* width: 55%; */
+    /* }
+    .cards .card3 {
+        margin-left: 25%;
+        /* border: 2px solid; */
+        /* width: 55%; */
+    /* } */ 
+    
+    
+/* } */
+/* @media only screen and (max-width:768px){
+    .circles {
+        padding: 80px 0;
+        display: block;
+        gap: 30px;
+    }
+    .circles .div1 {
+        width: 100%;
+    }
+    .circle .div2{
+        width: 100%;
+    }
+     */
+/* } */
+/* @media only screen and (max-width:576px) {
+    .data .p-data {
+    margin-left: 50px;
+}
+.popular .p-popular{
+    margin-left: 50px;
+}
+.popular-cards .cards {
+    margin-top: 60px;
+   
+}
+.cards .card1 {
+    margin-left: 4%;
+    /* border: 2px solid; */
+    /* width: 100%;
+    border: 2px solid palevioletred;
+}
+.cards .card2 {
+    margin: 10% 0;
+    margin-left: 4%;
+    /* border: 2px solid; */
+    /* width: 100%;
+    border: 2px solid palevioletred;
+} */
+/* .cards .card3 {
+    margin-left: 4%;
+    /* border: 2px solid; */
+    /* width: 100%;
+    border: 2px solid palevioletred;
+} */ 
+/* .img1-data .h4-img-data {
+    font-size: 55px;
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: right;
+    margin-bottom: 20px;
+} */ 
+
+/* .img1-data .p-img-data {
+    width: 60%;
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+    transform: translateX(100px);
+}
+
+} */
+@media only screen and (max-width:1160px) {
+    
+}
+@media only screen and (max-width:992px) {
+    
+}
+@media only screen and (max-width:768px) {
+
+
+    /* Media Queries for Mobile (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* General Utilities */
+    .container {
+        width: 95%;
+    }
+
+    /* Header Section */
+    .lists {
+        display: none;
+    }
+    .icon .search{
+        display: none;
+    }
+
+    .icon .bar {
+        display: block;
+    }
+
+    .data .p-data {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .data .btn-header {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin: 30px 0 60px;
+    }
+
+    /* Popular Section */
+    .popular .h2-popular {
+        margin-bottom: 15px;
+    }
+
+    .popular .p-popular {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .popular-cards .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards .card1, 
+    .cards .card2, 
+    .cards .card3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card1 .img-card,
+    .card2 .img-card,
+    .card3 .img-card {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .img1-data .p-img-data {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Our Statistics Section */
+    .our .p-our {
+        width: 90%;
+    }
+
+    .circles {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .circles .div1,
+    .circles .div2,
+    .circles .div3 {
+        width: 100%;
+    }
+
+    .div1 .circle1,
+    .div2 .circle2,
+    .div3 .circle3 {
+        width: 200px;
+        height: 200px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .circle1 .h4-circle,
+    .circle2 .h4-circle,
+    .circle3 .h4-circle {
+        font-size: 40px;
+    }
+
+    .div1 .circle1 .h5-circle,
+    .circle2 .h5-circle,
+    .circle3 .h5-circle {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /* Our Menu Section */
+    .our-menu-content .p-our-menu {
+        width: 90%;
+    }
+
+    .dishes .box1,
+    .dishes .box2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .box1 .dish1,
+    .box1 .dish2,
+    .box2 .dish3,
+    .box2 .dish4 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dish1,
+    .dish2,
+    .dish3,
+    .dish4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dish1 .p-box,
+    .dish2 .p-box,
+    .dish3 .p-box,
+    .dish4 .p-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Delicious Pasta Section */
+    .d-pasta {
+        flex-direction: column;
+    }
+
+    .d-pasta .bg-image {
+        width: 10%;
+        /* transform: translateX(0); */
+    }
+    .bg-image .ig{
+        width: 1025%;
+        /* width: 200%; */
+    }
+
+    .d-pasta .d-pasta-data {
+        margin-left: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .d-pasta-data .h2-pdata {
+        margin-top: 40px;
+    }
+
+    .d-pasta-data .pdata {
+        width: 100%;
+    }
+    .d-pasta-data .btn-dpasta{
+        margin-bottom: 50px;
+    }
+
+    /* Package Menu Section */
+    .package-menu .p-package {
+        width: 90%;
+    }
+
+    .package-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .package-cards .card1,
+    .package-cards .card2,
+    .package-cards .card3 {
+        width: 100%;
+    }
+
+    .card1 .card-img,
+    .card2 .card-img,
+    .card3 .card-img {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .card-data .p-data {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .card1 .btn-card,
+    .card2 .btn-card,
+    .card3 .btn-card {
+        margin: 30px auto;
+        padding: 10px 0;
+        width: 80%;
+        display: block;
+    }
+
+    .bt {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Chef Section */
+    .chef-img .img {
+        margin: 60px auto 0;
+        display: block;
+        width: 80%;
+    }
+
+    .chef-data .p-chef {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    /* Subscribe Section */
+    .subs-data .p-subs {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .subs-data .email {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .email .e-mail {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .email .btn-subs {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Footer Section */
+    .container .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .row .col-4,
+    .row .col-6 {
+        /* text-align: center; */
+        width: 100%;
+    }
+
+    .col-6 .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+    }
+
+@media only screen and (max-width:576px) {
+    
+}

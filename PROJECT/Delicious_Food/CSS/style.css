@@ -1,0 +1,953 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utility class */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+
+#header {
+    background: url(/Images/header-img.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+}
+
+.lists .list {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.list .nav-a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: white;
+}
+
+.list::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: .5s;
+    scale: 0;
+}
+
+.icon i {
+    color: white;
+    font-size: 30px;
+}
+ .icon .search {
+    color: white;
+    font-size: 31px;
+ }
+
+
+.icon .bar {
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.list:hover::after {
+    scale: 1;
+}
+
+.data {
+    text-align: center;
+    color: #ffffff;
+}
+
+.data .h1-data {
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    font-size: clamp(21px, 20vw, 250px);
+    font-style: normal;
+    font-family: Grand hotel;
+    /* margin: auto; */
+}
+
+.data .p-data {
+    margin: 5px auto;
+    width: 45%;
+    font-size: clamp(18px, 3.2vw, 24px);
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    /* margin-left: 300px; */
+}
+
+.data .btn-header {
+    margin: 15px;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #e8565e;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 20px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+/* header end */
+/* popular start */
+#popular {
+    background-image: url(/Images/popular-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+.popular {
+    text-align: center;
+}
+
+.popular .h2-popular {
+    padding-top: 20px;
+    font-size: clamp(21px, 20vw, 150px);
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.popular .p-popular {
+    margin: 50px auto;
+    width: 50%;
+    font-size: clamp(18px, 3.2vw, 28px);
+    /* color: black; */
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.popular-cards .cards {
+    margin-top: 60px;
+    display: flex;
+
+}
+
+.cards {
+    gap: 40px;
+}
+
+.cards .card1 {
+    width: 33.33%;
+}
+
+.card1 .img-card {
+    margin-top: 20px;
+    /* transform: translateX(50px); */
+    margin-left: 50px;
+    /* margin: 10px auto; */
+    /* border: 2px solid; */
+}
+
+.img1-data .h4-img-data {
+    font-size: 55px;
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img1-data .p-img-data {
+    width: 60%;
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+    /* transform: translateX(100px); */
+    text-align: center;
+}
+
+.cards .card2 {
+    width: 33.33%;
+}
+
+.card2 .img-card {
+    margin-top: 20px;
+    /* transform: translateX(50px); */
+    margin-left: 50px;
+}
+
+.img1-data .h4-img-data {
+    font-size: 55px;
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img1-data .p-img-data {
+    width: 60%;
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+    /* transform: translateX(100px); */
+    /* margin-left: 100px; */
+    margin: 0 auto;
+}
+
+.cards .card3 {
+    width: 33.33%;
+}
+
+.card3 .img-card {
+    margin-top: 20px;
+    /* transform: translateX(50px); */
+    margin-left: 50px;
+}
+
+.img1-data .h4-img-data {
+    font-size: 55px;
+    color: #e8565e;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img1-data .p-img-data {
+    width: 60%;
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+    /* transform: translateX(100px); */
+    margin-left: 100px;
+}
+
+/* popular end */
+
+/* <!-- our statistic start --> */
+
+#our {
+    background-image: url(/Images/our-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.our .h2-our {
+    padding-top: 70px;
+    font-size: clamp(21px, 20vw, 125px);
+    color: white;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 30px;
+    /* margin: 0 auto; */
+}
+
+.our .p-our {
+    /* margin: 0px 270px; */
+    margin: 0 auto;
+    width: 60%;
+    font-size: clamp(18px, 3.2vw, 28px);
+    color: white;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.circles {
+    padding: 80px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.circles .div1 {
+    width: 33.33%;
+}
+
+.div1 .circle1 {
+    margin: 20px auto;
+    width: 55%;
+    border: 5px dashed white;
+    border-radius: 50%;
+}
+
+.div1 .circle1 {
+    padding: 50px;
+    text-align: center;
+}
+
+.circle1 .h4-circle {
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1 .circle1 .h5-circle {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Lato";
+}
+
+.circles .div2 {
+    width: 33.33%;
+}
+
+.div2 .circle2 {
+    margin: 20px auto;
+    width: 55%;
+    border: 5px dashed white;
+    border-radius: 50%;
+}
+
+.circle2 {
+    padding: 50px;
+}
+
+.circle2 .h4-circle {
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.circle2 .h5-circle {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.circles .div3 {
+    width: 33.33%;
+}
+
+.div3 .circle3 {
+    margin: 20px auto;
+    width: 55%;
+    border: 5px dashed white;
+    border-radius: 50%;
+}
+
+.circle3 {
+    padding: 50px;
+    
+}
+
+.circle3 .h4-circle {
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.circle3 .h5-circle {
+    /* font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Lato"; */
+    /* text-align: center; */
+    /* transform: translateX(-25px); */
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Lato";
+    margin: auto -25px;
+    
+}
+
+/* <!-- our statistic end --> */
+
+/* our menu start */
+#our menu {
+    /* padding: 40px 0; */
+    background-color: #faf5e4;
+    /* border: 2px solid; */
+}
+
+.our-menu-content .h2-our-menu {
+    padding-top: 70px;
+    font-size: clamp(21px, 20vw, 125px);
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 30px;
+    /* border: 2px solid; */
+}
+
+.our-menu-content .p-our-menu {
+    margin: 0 auto;
+    width: 60%;
+    font-size: clamp(18px, 3.2vw, 30px);
+    /* color: black; */
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    /* border: 2px solid; */
+}
+
+.dishes {
+    margin: 70px 0;
+    /* border: 2px solid; */
+}
+
+.dishes .box1 {
+    display: flex;
+    gap: 30px;
+    /* border: 2px solid; */
+}
+
+.box1 .dish1 {
+    /* transform: translateX(40px); */
+    margin-left: 40px;
+    width: 50%;
+    /* border: 2px solid; */
+}
+
+.dish1 {
+    display: flex;
+    gap: 40px;
+}
+
+.dish1 .img-1 {
+    /* transform: translateY(40px); */
+    margin-top: 40px;
+}
+
+.box1 .dish1 .h4-box {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    margin-bottom: 15px;
+}
+
+.dish1 .p-box {
+    width: 70%;
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.box1 .dish2 {
+    /* transform: translateX(50px); */
+    margin-left: 50px;
+    width: 50%;
+    /* border: 2px solid; */
+}
+
+.dish2 {
+    display: flex;
+    gap: 40px;
+}
+
+.dish2 .img-2 {
+    /* transform: translateY(60px); */
+    margin-top: 60px;
+}
+
+.box1 .dish2 .h4-box {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    margin-bottom: 15px;
+}
+
+.dish2 .p-box {
+    width: 73%;
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.dishes .box2 {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.box2 .dish3 {
+    /* transform: translateX(40px); */
+    margin-left: 40px;
+    width: 50%;
+}
+
+.dish3 {
+    display: flex;
+    gap: 40px;
+}
+
+.dish3 .img-3 {
+    /* transform: translateY(50px); */
+    /* transform: translateY(30px); */
+    margin-top: 50px;
+}
+
+.box2 .dish3 .h4-box {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    margin-bottom: 15px;
+}
+
+.dish3 .p-box {
+    width: 70%;
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.box2 .dish4 {
+    /* transform: translateX(50px); */
+    margin-left: 50px;
+    width: 50%;
+}
+
+.dish4 {
+    display: flex;
+    gap: 40px;
+}
+
+.dish4 .img-4 {
+    /* transform: translateY(40px); */
+    margin-top: 40px;
+}
+
+.box2 .dish4 .h4-box {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    margin-bottom: 15px;
+}
+
+.dish4 .p-box {
+    width: 70%;
+    font-size: clamp(18px, 3vw, 25px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+/* our menu end */
+
+/* <!-- delicious pasta start --> */
+
+#d-pasta {
+    background-image: url(/Images/d-pasta-shape.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.d-pasta {
+    display: flex;
+}
+
+.d-pasta .bg-image {
+    width: 50%;
+    transform: translateX(-9px);
+    /* margin-right: 9px; */
+
+}
+
+.d-pasta .d-pasta-data {
+    /* margin-top: 280px; */
+    margin-left: 50px;
+}
+
+.d-pasta-data .h2-pdata {
+    margin-top: 300px;
+    font-size: clamp(70px, 10vw, 85px);
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+.d-pasta-data .pdata {
+    width: 80%;
+    font-size: clamp(20px, 3vw, 30px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    padding-top: 20px;
+}
+
+.d-pasta-data .btn-dpasta {
+    background-color: #eb4d55;
+    margin-top: 40px;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 20px;
+}
+
+/* <!-- delicious pasta end --> */
+
+/* <!-- package menu start --> */
+
+#package {
+    padding: 30px;
+    background-image: url(/Images/package-menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.package-menu .h4-package {
+    padding-top: 30px;
+    font-size: clamp(21px, 20vw, 125px);
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.package-menu .p-package {
+    margin: 0px auto;
+    width: 60%;
+    font-size: clamp(18px, 3.2vw, 30px);
+    /* color: black; */
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    /* transform: translateX(5px); */
+}
+
+.package-cards {
+    display: flex;
+    gap: 65px;
+    margin-top: 90px;
+    margin-bottom: 55px;
+}
+
+.package-cards .card1 {
+    background-color: #faf5e4;
+    width: 30%;
+    border-radius: 30px 30px;
+}
+
+.card1 .card-img {
+    margin: 45px 150px;
+    /* margin: 0 auto; */
+    margin-top: 14%;
+}
+
+.card-data .h4-data {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.card-data .p-data {
+    width: 50%;
+    font-size: 22px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    margin-left: 90px;
+    margin-top: 10px;
+    /* text-align: center; */
+    /* transform: translateX(-10px); */
+}
+
+ .card1 .btn-card {
+    background-color: #eb4d55;
+    margin: 40px 16px;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 125px;
+    /* transform: translateX(-24px); */
+    /* margin-left: 50%; */
+}
+.card1 .bt{
+    margin-left: 17px;
+}
+
+.package-cards .card2 {
+    background-color: #faf5e4;
+    width: 30%;
+    border-radius: 30px 30px;
+}
+
+.card2 .card-img {
+    margin: 45px 150px;
+}
+
+.card-data .h4-data {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.card-data .p-data {
+    width: 70%;
+    font-size: 22px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.card2 .btn-card {
+    background-color: #eb4d55;
+    margin: 40px 55px;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 125px;
+
+}
+.bt{
+    margin-left: -21px;
+}
+
+.package-cards .card3 {
+    background-color: #faf5e4;
+    width: 30%;
+    border-radius: 30px 30px;
+}
+
+.card3 .card-img {
+    margin: 45px 150px;
+}
+
+.card-data .h4-data {
+    font-size: 50px;
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.card-data .p-data {
+    width: 70%;
+    font-size: 22px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.card3 .btn-card {
+    background-color: #eb4d55;
+    margin: 40px 55px;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 125px;
+
+}
+
+/* <!-- package menu end --> */
+
+/* <!-- chef start --> */
+
+#chef {
+    background-image: url(/Images/chef-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.chef-img .img {
+    /* padding-top:200px ; */
+    margin-top: 130px;
+    margin-left: 37%;
+}
+
+.chef-data .p-chef {
+    width: 83.5%;
+    font-size: clamp(25px, 4.5vw, 45px);
+    color: #3d3d3d;
+    font-weight: bold;
+    font-family: "Lato";
+    text-align: center;
+    margin-left: 9%;
+    margin-top: 7%;
+}
+
+.chef-data .h2-chef {
+    font-size: clamp(50px, 8vw, 90px);
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+    margin-top: 3%;
+    padding-bottom: 7%;
+}
+
+/* <!-- chef end --> */
+
+/* subscribe start */
+
+#subs {
+    background-color: #faf5e4;
+}
+
+.subs-data .h1-subs {
+    padding-top: 6%;
+    font-size: clamp(21px, 20vw, 125px);
+    color: #eb4d55;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.subs-data .p-subs {
+    width: 60%;
+    font-size: clamp(18px, 3.2vw, 30px);
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin: 2% 20%;
+}
+
+.subs-data .email {
+    margin-left: 26%;
+    padding-bottom: 6%;
+    padding-top: 3%;
+}
+
+.email .e-mail {
+    border: none;
+    border-radius: 20px 20px;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.email .btn-subs {
+    background-color: #eb4d55;
+    margin-top: 5%;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Lato";
+    padding: 12px 30px;
+    margin-left: 22%;
+}
+
+/* subscribe end */
+
+/* footer start */
+
+#footer {
+    padding: 100px 0;
+    background-color: #2a2a2a;
+}
+
+.container .row {
+    display: flex;
+    gap: 60px;
+}
+
+.row .col-4 {
+    width: 40%;
+}
+
+.footer .h2-footer {
+    font-size: clamp(25px, 4vw, 54px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Grand hotel";
+}
+
+.footer .p-footer {
+    margin-top: 5%;
+    width: 85%;
+    font-size: clamp(18px, 3.2vw, 23px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.row .col-6 {
+    width: 60%;
+}
+
+.row .col {
+    width: 33.33%;
+}
+
+.footer .h2-footer {
+    font-size: clamp(18px, 3vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.footer .ul-footer {
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+.ul-footer .li-footer {
+    margin: 10px 0;
+}
+
+.ul-footer .li-footer .a-footer {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+/* footer end */
