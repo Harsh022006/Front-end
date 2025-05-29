@@ -17,16 +17,20 @@ function Header() {
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/">Home</NavLink>
                                 </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link " aria-current="page" to="/About" >About</NavLink>
+                                <li className="nav-item dropdown">
+                                    <NavLink className="nav-link " aria-current="page" data-bs-toggle="dropdown" aria-expanded="false" to="/About" >About</NavLink>
+                                    <ul className='dropdown-menu'>
+                                         <li><NavLink className="dropdown-item" to="/About-1">About-1</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to="/About-2">About-2</NavLink></li>
+                                    </ul>
                                 </li>
                                   <li className="nav-item">
-                                    <NavLink className="nav-link" to="/contact">Contact</NavLink>
+                                    <NavLink className="nav-link dropdown" to="/contact">Contact</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/help">Help</NavLink>
                                 </li>
-                                {/* <li className="nav-item dropdown">
+                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Dropdown
                                     </a>
@@ -36,7 +40,7 @@ function Header() {
                                         <li><hr className="dropdown-divider" /></li>
                                         <li><a className="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </li> */}
+                                </li> 
                                 <li className="nav-item">
                                     <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                                 </li>

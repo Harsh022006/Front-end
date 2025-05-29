@@ -4,6 +4,7 @@ import Home from './Layout/Pages/Home';
 import Help from './Layout/Pages/Help';
 import About from './Layout/Pages/About';
 import Contact from './Layout/Pages/Contact';
+import About1 from './Layout/Pages/Page/About1';
 // import Maincontext from './Context/Maincontext';
 // import Usecart from './UssEffect/Usecart';
 // import Usecard from './UssEffect/Usecard';
@@ -17,7 +18,7 @@ import Contact from './Layout/Pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+     <BrowserRouter>
       <div>
         {/* <Classcompo />
       <Funcompo />
@@ -32,13 +33,15 @@ function App() {
         {/* <Maincontext /> */}
       </div>
 
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
           <Route path="/Help" element={<Help />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+           <Route  path="/About1" element={<About1 />} />
+          
+      </Routes> 
+     </BrowserRouter> 
   )
 }
 
