@@ -42,17 +42,27 @@ function Header() {
                             <div className="collapse navbar-collapse" id="navbarCollapse">
                                 <div className="navbar-nav mx-auto py-0">
                                     <NavLink to="/Dashboard" className="nav-item nav-link">Dashboard</NavLink>
-                                    <NavLink to="/about" className="nav-item nav-link">About</NavLink>
-                                    <NavLink to="/service" className="nav-item nav-link">Service</NavLink>
-                                    <NavLink to="/blog-Manager" className="nav-item nav-link">Blog-Manager</NavLink>
-                                    <div className="nav-item dropdown">
-                                        <NavLink to="pages" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
+                                    
+
+                                     <div className="nav-item dropdown">
+                                        <NavLink to="pages" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage Data</NavLink>
                                         <div className="dropdown-menu m-0">
-                                            <NavLink to="/features" className="dropdown-item">Our Feature</NavLink>
-                                            <NavLink to="/cars" className="dropdown-item">Our Cars</NavLink>
-                                            <NavLink to="/team" className="dropdown-item">Our Team</NavLink>
-                                            <NavLink to="/test" className="dropdown-item">Testimonial</NavLink>
-                                            <NavLink to="*" className="dropdown-item">404 Page</NavLink>
+                                            {/* <NavLink to="/managedata" className="nav-item nav-link">Manage Data</NavLink> */}
+                                            <NavLink to="/blog-Manager" className="dropdown-item">Blog-Manage</NavLink>
+                                            <NavLink to="*" className="dropdown-item">car-Manage</NavLink>
+                                            <NavLink to="*" className="dropdown-item">team-Manage</NavLink>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div className="nav-item dropdown">
+                                        <NavLink to="pages" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Add Data</NavLink>
+                                        <div className="dropdown-menu m-0">
+                                            <NavLink to="/addblog" className="dropdown-item">Add-Blogs</NavLink>
+                                            <NavLink to="/addcar" className="dropdown-item">Add Car</NavLink>
+                                            <NavLink to="/addteam" className="dropdown-item">Add Team</NavLink>
+                                            
                                         </div>
                                     </div>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>

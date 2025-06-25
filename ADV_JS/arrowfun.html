@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <script>
+        const sum=()=>{
+            var a=10, b=20
+            console.log("sum->",a+b)
+        }
+        sum()
+
+        const sub=(a,b)=>{
+            console.log("sub=>",a-b)
+            document.getElementById("h1").innerHTML = a+b; 
+        }
+        sub(10,5)
+
+        function mul(){
+            let a=10,b=5
+            console.log(a*b)
+            document.getElementById("h1").innerHTML=a*b
+        }
+        mul()
+        
+    </script>
+</body>
+</html>

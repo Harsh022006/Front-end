@@ -12,6 +12,9 @@ import Test from './Cental/Pages/Test'
 import Error from './Cental/Pages/Error'
 import Dashboard from './Admin/Apages/Dashboard'
 import Blogmanager from './Admin/Apages/Blogmanager'
+import Addblog from './Admin/Apages/Addblog'
+import Addcar from './Admin/Apages/Addcar'
+import Addteam from './Admin/Apages/Addteam'
 
 function App() {
   return (
@@ -32,7 +35,9 @@ function App() {
         <Route path="*" element={<Error/>} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Blog-Manager" element={<Blogmanager />} />
-
+        <Route path="/addblog" element={<Addblog />} />
+        <Route path="/addcar" element={<Addcar />} />
+        <Route path="/addteam" element={<Addteam />} />
       </Routes>
       </BrowserRouter>
     </div>

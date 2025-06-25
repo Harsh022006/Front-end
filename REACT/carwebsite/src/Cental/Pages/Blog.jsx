@@ -12,9 +12,10 @@ function Blog() {
     }, [])
 
     const fetchdata = async () => {
-        const res = await axios.get("http://localhost:3000/Blog")
+        const res = await axios.get ("http://localhost:3000/Blog")
         console.log(res.data)
         setblog(res.data)
+        
     }
     return (
         <div>
@@ -38,7 +39,7 @@ function Blog() {
                                     <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                                         <div className="blog-item">
                                             <div className="blog-img">
-                                                <img src={data.img} className="img-fluid rounded-top w-100" style={{height:"400px"}} alt="Image" />
+                                                <img src={data.img} className="img-fluid rounded-top w-100" style={{height:"450px"}} alt="Image" />
                                             </div>
                                             <div className="blog-content rounded-bottom p-4">
                                                 <div className="blog-date">{data.date}</div>
