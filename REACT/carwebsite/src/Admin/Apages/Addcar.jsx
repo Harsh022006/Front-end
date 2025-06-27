@@ -7,7 +7,7 @@ function Addcar() {
     <div>
       <Header />
       <Navbar title="ADD CAR DATA" name="Add Car Data" />
-      <h1>heeelooo</h1>
+      <h1></h1>
     </div>
   )
 }

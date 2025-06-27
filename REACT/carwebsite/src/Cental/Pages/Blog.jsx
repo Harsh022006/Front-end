@@ -49,7 +49,7 @@ function Blog() {
                                                 </div>
                                                 {/* <a href="#" className="h4 d-block mb-3">Rental Cars how to check driving fines?</a> */}
                                                 <h5 className='mb-3'>{data.title}</h5>
-                                                <p className="mb-3">{data.description}</p>
+                                                <p className="mb-3" style={{}}>{data.description}</p>
                                                 {/* <a href="#" className>Read More  <i className="fa fa-arrow-right" /></a> */}
                                             </div>
                                         </div>
