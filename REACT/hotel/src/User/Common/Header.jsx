@@ -46,7 +46,7 @@ function Header() {
                                     <NavLink to="/" className="nav-item nav-link">Home</NavLink>
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                     <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
-                                    <NavLink to="/room" className="nav-item nav-link">Rooms</NavLink>
+                                    <NavLink to="/Room" className="nav-item nav-link">Rooms</NavLink>
                                     <div className="nav-item dropdown">
                                        <NavLink to="pages" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
                                         <div className="dropdown-menu rounded-0 m-0">

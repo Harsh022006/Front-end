@@ -10,6 +10,8 @@ import Test from './User/Pages/Test'
 import Booking from './User/Pages/Booking'
 import Error from './User/Pages/Error'
 import Dashboard from './Admin/Apages/Dashboard'
+import Roommanage from './Admin/Apages/Roommanage'
+import Addroom from './Admin/Apages/Addroom'
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/room" element={<Room />} />
+        <Route path="/Room" element={<Room />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
@@ -28,6 +30,8 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="*" element={<Error />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/Roommanage" element={<Roommanage />} />
+        <Route path="/roomadd" element={<Addroom />} />
       </Routes>
       </BrowserRouter>
     </div>

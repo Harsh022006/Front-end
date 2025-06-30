@@ -47,11 +47,12 @@ function Aheader() {
                                     <div className="nav-item dropdown">
                                         <NavLink to="manage-data" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage-Data</NavLink>
                                         <div className="dropdown-menu rounded-0 m-0">
-                                            <NavLink to="/about" className="nav-item nav-link">manage About</NavLink>
-                                            <NavLink to="/service" className="nav-item nav-link">manage Services</NavLink>
-                                            <NavLink to="/room" className="nav-item nav-link">manage Rooms</NavLink>
+                                            <NavLink to="/about" className="dropdown-item">manage About</NavLink>
+                                            <NavLink to="/roommanage" className="dropdown-item">manage Rooms</NavLink>
+                                            <NavLink to="/service" className="dropdown-item">manage Services</NavLink>
+                                            
                                             <NavLink to="/team" className="dropdown-item">manage Team</NavLink>
-                                            <NavLink to="/test" className="dropdown-item">manage Testimonial</NavLink>
+                                            {/* <NavLink to="/test" className="dropdown-item">manage Testimonial</NavLink> */}
                                             {/* <NavLink to="*" className="dropdown-item">404 page</NavLink> */}
                                         </div>
                                     </div>
@@ -61,10 +62,10 @@ function Aheader() {
                                         <div className="dropdown-menu rounded-0 m-0">
 
                                             <NavLink to="/booking" className="dropdown-item">Add About</NavLink>
-                                            <NavLink to="/booking" className="dropdown-item">Add Room</NavLink>
+                                            <NavLink to="/roomadd" className="dropdown-item">Add Room</NavLink>
                                             <NavLink to="/booking" className="dropdown-item">Add Service</NavLink>
                                             <NavLink to="/team" className="dropdown-item">Add Team</NavLink>
-                                            <NavLink to="/test" className="dropdown-item">Add Testimonial</NavLink>
+                                            {/* <NavLink to="/test" className="dropdown-item">Add Testimonial</NavLink> */}
                                             {/* <NavLink to="*" className="dropdown-item">404 page</NavLink> */}
                                         </div>
                                     </div>
