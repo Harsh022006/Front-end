@@ -83,8 +83,8 @@ function Addroom() {
               </div>
               <div className="col-12">
                 <div className="form-floating">
-                  <input type="img" name='img' onChange={getchange} value={form.img} className="form-control" id="img" placeholder="Your img" required />
-                  <label htmlFor="img">Your img</label>
+                  <input type="url" name='img' onChange={getchange} value={form.img} className="form-control" id="img" placeholder="Your img" required />
+                  <label htmlFor="image">Your img</label>
                 </div>
               </div>
               <div className="col-12">
