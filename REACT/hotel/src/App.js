@@ -12,6 +12,12 @@ import Error from './User/Pages/Error'
 import Dashboard from './Admin/Apages/Dashboard'
 import Roommanage from './Admin/Apages/Roommanage'
 import Addroom from './Admin/Apages/Addroom'
+import Serviceadd from './Admin/Apages/Serviceadd'
+import Servicemanage from './Admin/Apages/Servicemanage'
+import Aboutadd from './Admin/Apages/Aboutadd'
+import Aboutmanage from './Admin/Apages/Aboutmanage'
+import Teamadd from './Admin/Apages/Teamadd'
+import Teammanage from './Admin/Apages/Teammanage'
 
 
 function App() {
@@ -32,6 +38,12 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/Roommanage" element={<Roommanage />} />
         <Route path="/roomadd" element={<Addroom />} />
+        <Route path="/serviceadd" element={<Serviceadd />} />
+        <Route path="/servicemanage" element={<Servicemanage />} />
+        <Route path="/aboutadd" element={<Aboutadd />} />
+        <Route path="/aboutmanage" element={<Aboutmanage />} />
+        <Route path="/teamadd" element={<Teamadd />} />
+        <Route path="/teammanage" element={<Teammanage />} />
       </Routes>
       </BrowserRouter>
     </div>

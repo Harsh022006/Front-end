@@ -45,26 +45,26 @@ function Aheader() {
                                 <div className="navbar-nav mr-auto py-0">
                                     <NavLink to="/dashboard" className="nav-item nav-link">Dashboard</NavLink>
                                     <div className="nav-item dropdown">
-                                        <NavLink to="manage-data" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage-Data</NavLink>
+                                        <NavLink to="/managedata" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Manage-Data</NavLink>
                                         <div className="dropdown-menu rounded-0 m-0">
-                                            <NavLink to="/about" className="dropdown-item">manage About</NavLink>
-                                            <NavLink to="/roommanage" className="dropdown-item">manage Rooms</NavLink>
-                                            <NavLink to="/service" className="dropdown-item">manage Services</NavLink>
+                                            <NavLink to="/aboutmanage" className="dropdown-item">manage About</NavLink>
+                                            <NavLink to="/Roommanage" className="dropdown-item">manage Rooms</NavLink>
+                                            <NavLink to="/servicemanage" className="dropdown-item">manage Services</NavLink>
                                             
-                                            <NavLink to="/team" className="dropdown-item">manage Team</NavLink>
+                                            <NavLink to="/teammanage" className="dropdown-item">manage Team</NavLink>
                                             {/* <NavLink to="/test" className="dropdown-item">manage Testimonial</NavLink> */}
                                             {/* <NavLink to="*" className="dropdown-item">404 page</NavLink> */}
                                         </div>
                                     </div>
 
                                     <div className="nav-item dropdown">
-                                        <NavLink to="Add-data" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Add-Data</NavLink>
+                                        <NavLink to="/adddata"  className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Add-Data</NavLink>
                                         <div className="dropdown-menu rounded-0 m-0">
 
-                                            <NavLink to="/booking" className="dropdown-item">Add About</NavLink>
+                                            <NavLink to="/aboutadd" className="dropdown-item">Add About</NavLink>
                                             <NavLink to="/roomadd" className="dropdown-item">Add Room</NavLink>
-                                            <NavLink to="/booking" className="dropdown-item">Add Service</NavLink>
-                                            <NavLink to="/team" className="dropdown-item">Add Team</NavLink>
+                                            <NavLink to="/serviceadd" className="dropdown-item">Add Service</NavLink>
+                                            <NavLink to="/teamadd" className="dropdown-item">Add Team</NavLink>
                                             {/* <NavLink to="/test" className="dropdown-item">Add Testimonial</NavLink> */}
                                             {/* <NavLink to="*" className="dropdown-item">404 page</NavLink> */}
                                         </div>

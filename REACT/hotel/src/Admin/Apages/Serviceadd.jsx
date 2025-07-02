@@ -1,19 +1,15 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import Aheader from '../Acommon/Aheader'
 import Anavbar from '../Acommon/Anavbar'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-function Addroom() {
-
-  const redirect = useNavigate()
+function Serviceadd() {
+    const redirect = useNavigate()
 
   const [form, setform] = useState({
     id: "",
     title: "",
-    price: "",
-    bed: "",
-    Bath: "",
     img: "",
     desc: ""
   })
@@ -33,52 +29,29 @@ function Addroom() {
   const submitroom = async (e) => {
     e.preventDefault()
 
-    const res = await axios.post("http://localhost:3000/room",form)
+    const res = await axios.post("http://localhost:3000/service",form)
     console.log(res.data)
-    redirect("/Roommanage")
+    redirect("/Servicemanage")
     setform({
       id: "",
       title: "",
-      price: "",
-      bed: "",
-      Bath: "",
       img: "",
       desc: ""
     })
   }
-
   return (
     <div>
       <Aheader />
-      <Anavbar title="Add Room" name="Add Room" />
-
-      <div className="col-md-6 container border bg-info bg-gradient">
+      <Anavbar title="Service Add " name="Service Add" />
+         <div className="col-md-6 container border bg-info bg-gradient">
         <div className="wow fadeInUp" data-wow-delay="0.2s">
-          <h1 className='text-center text-white my-3'>Send Your Room Data</h1>
+          <h1 className='text-center text-white my-3'>Send Your Service Data</h1>
           <form className='p-3' onSubmit={submitroom} >
             <div className="row g-3">
-              <div className="col-md-6">
+              <div className="col-12">
                 <div className="form-floating">
                   <input type="text" name='title' onChange={getchange} value={form.title} className="form-control" id="title" placeholder="Your title" required />
                   <label htmlFor="title">Your title</label>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-floating">
-                  <input type="text" name='price' onChange={getchange} value={form.price} className="form-control" id="price" placeholder="Your price" required />
-                  <label htmlFor="price">Your price</label>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="form-floating">
-                  <input type="text" name='bed' onChange={getchange} value={form.bed} className="form-control" id="bed" placeholder="bed" required />
-                  <label htmlFor="bed">bed</label>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="form-floating">
-                  <input type="text" name='Bath' onChange={getchange} value={form.Bath} className="form-control" id="Bath" placeholder="Bath" required/>
-                  <label htmlFor="Bath">Bath</label>
                 </div>
               </div>
               <div className="col-12">
@@ -103,9 +76,8 @@ function Addroom() {
           </form>
         </div>
       </div>
-
     </div>
   )
 }
 
-export default Addroom
+export default Serviceadd

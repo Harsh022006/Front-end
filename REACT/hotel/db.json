@@ -52,8 +52,8 @@
       "img": "https://vishwakarmainteriors.com/wp-content/uploads/2022/08/Model-Town_E-3-9_GF_Rear-RHS-Bedroom-01111-1024x640.jpg",
       "price": "$200/night",
       "bed": "3",
-      "Bath": "4",
-      "desc": "This is the best luxury room in this hotel 2"
+      "Bath": "5",
+      "desc": "This is the best luxury room in this hotel \n"
     },
     {
       "id": "3",
@@ -61,8 +61,8 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTaIUdUMp3dNdT1wzechSvUCbfRICZT2xGQ&s",
       "price": "$200/day",
       "bed": "2",
-      "Bath": "2",
-      "desc": "This is the best hall and balcony view in this hotel"
+      "Bath": "4",
+      "desc": "This is the best hall and balcony view in this hotel 4"
     }
   ],
   "about": [
@@ -77,13 +77,19 @@
       "title": "Tarrace",
       "desc": "This is Terrace view",
       "img": "https://i.pinimg.com/236x/61/c6/33/61c633c4e3a559f20726d6b25e4b6b6c.jpg"
+    },
+    {
+      "id": "1751440848410",
+      "title": "Our Receptions",
+      "img": "https://tse2.mm.bing.net/th/id/OIP.Hj8W3BBCMFR6i6eIjg8I-wHaFK?pid=Api&P=0&h=180",
+      "desc": "We try to give you best experience and service"
     }
   ],
   "service": [
     {
       "id": "1",
       "title": "luxurious rooms",
-      "desc": "we provide luxurious amd AC rooms with low cost ",
+      "desc": "we provide luxurious and AC rooms with low cost ",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTr49PytbAKZs_hrqEyDGcViUv_kvN4FQeMw&s"
     },
     {
@@ -95,7 +101,7 @@
     {
       "id": "3",
       "title": "chill area",
-      "desc": "chilling area for waik, gaming side and swimming pool ",
+      "desc": "chilling area for long waik, gaming side and swimming pool ",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5OHmuHTYx_JPNGx-3dsvoP_rWuYPWUZVGow&s"
     }
   ],

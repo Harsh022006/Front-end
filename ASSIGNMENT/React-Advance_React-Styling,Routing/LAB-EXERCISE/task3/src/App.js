@@ -6,6 +6,10 @@ import React from 'react'
 // import Input from './HandlingEvent/Input'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Routing/Pages/Home'
+import About from './Routing/Pages/About'
+import Contact from './Routing/Pages/Contact'
+import Error from './Routing/Pages/Error'
+import Help from './Routing/Pages/Help'
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Error />} />
+      <Route path="/help" element={<Help />} />
     </Routes>
     </BrowserRouter>
     </div>
