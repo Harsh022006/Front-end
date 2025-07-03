@@ -5,17 +5,39 @@ import axios from 'axios'
 
 function Home() {
 
-    const[room,setroom]=useState([])
-    
-      useEffect(()=>{
+    const [room, setroom] = useState([])
+
+    const [service, setservice] = useState([])
+
+    const [test, settest] = useState([])
+
+    const [team, setteam] = useState([])
+
+    useEffect(() => {
         fetchdata()
-      },[])
-    
-      const fetchdata = async ()=>{
+    }, [])
+
+    const fetchdata = async () => {
         const res = await axios.get("http://localhost:3000/room")
         console.log(res.data)
         setroom(res.data)
-      }
+
+        const resa = await axios.get("http://localhost:3000/service")
+        console.log(resa.data)
+        setservice(resa.data)
+
+        const result = await axios.get("http://localhost:3000/testimonial")
+        console.log(result.data)
+        settest(result.data)
+
+        const resp = await axios.get("http://localhost:3000/team")
+        console.log(resp.data)
+        setteam(resp.data)
+    }
+
+
+
+
 
     return (
         <div>
@@ -162,52 +184,52 @@ function Home() {
             {/* About End */}
             {/* Room Start */}
             <div className="container-xxl py-5">
-        <div className="container">
-          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 className="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-            <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Rooms</span></h1>
-          </div>
-          <div className="row g-4">
-           {
-            room && room.map((data)=>{
-              console.log(data)
-              return(
-                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="room-item shadow rounded overflow-hidden">
-                <div className="position-relative">
-                  <img className="img-fluid" src={data.img} style={{height:"330px"}} alt />
-                  <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">{data.price}</small>
-                </div>
-                <div className="p-4 mt-2">
-                  <div className="d-flex justify-content-between mb-3">
-                    <h5 className="mb-0">{data.title}</h5>
-                    <div className="ps-2">
-                      <small className="fa fa-star text-primary" />
-                      <small className="fa fa-star text-primary" />
-                      <small className="fa fa-star text-primary" />
-                      <small className="fa fa-star text-primary" />
-                      <small className="fa fa-star text-primary" />
+                <div className="container">
+                    <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 className="section-title text-center text-primary text-uppercase">Our Rooms</h6>
+                        <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Rooms</span></h1>
                     </div>
-                  </div>
-                  <div className="d-flex mb-3">
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2" />{data.bed}</small>
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2" />{data.Bath}</small>
-                    <small><i className="fa fa-wifi text-primary me-2" />Wifi</small>
-                  </div>
-                  <p className="text-body mb-3">{data.desc}</p>
-                  <div className="d-flex justify-content-between">
-                    <a className="btn btn-sm btn-primary rounded py-2 px-4" href>View Detail</a>
-                    <a className="btn btn-sm btn-dark rounded py-2 px-4" href>Book Now</a>
-                  </div>
+                    <div className="row g-4">
+                        {
+                            room && room.map((data) => {
+                                console.log(data)
+                                return (
+                                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="room-item shadow rounded overflow-hidden">
+                                            <div className="position-relative">
+                                                <img className="img-fluid" src={data.img} style={{ height: "330px" }} alt />
+                                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">{data.price}</small>
+                                            </div>
+                                            <div className="p-4 mt-2">
+                                                <div className="d-flex justify-content-between mb-3">
+                                                    <h5 className="mb-0">{data.title}</h5>
+                                                    <div className="ps-2">
+                                                        <small className="fa fa-star text-primary" />
+                                                        <small className="fa fa-star text-primary" />
+                                                        <small className="fa fa-star text-primary" />
+                                                        <small className="fa fa-star text-primary" />
+                                                        <small className="fa fa-star text-primary" />
+                                                    </div>
+                                                </div>
+                                                <div className="d-flex mb-3">
+                                                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2" />{data.bed}</small>
+                                                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2" />{data.Bath}</small>
+                                                    <small><i className="fa fa-wifi text-primary me-2" />Wifi</small>
+                                                </div>
+                                                <p className="text-body mb-3">{data.desc}</p>
+                                                <div className="d-flex justify-content-between">
+                                                    <a className="btn btn-sm btn-primary rounded py-2 px-4" href>View Detail</a>
+                                                    <a className="btn btn-sm btn-dark rounded py-2 px-4" href>Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-              </div>
             </div>
-              )
-            })
-           }
-          </div>
-        </div>
-      </div>
             {/* Room End */}
             {/* Video Start */}
             <div className="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
@@ -255,120 +277,63 @@ function Home() {
                         <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Services</span></h1>
                     </div>
                     <div className="row g-4">
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-hotel fa-2x text-primary" />
+                        {
+                            service && service.map((data) => {
+                                console.log(data)
+                                return (
+                                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <a className="service-item rounded">
+                                            <div className="p-1">
+                                                <div className="w-100 h-100 d-flex align-items-center justify-content-center">
+                                                    <img src={data.img} style={{ height: "200px" }} alt="" />
+                                                </div>
+                                            </div>
+                                            <h5 className="mb-4">{data.title}</h5>
+                                            <p className="text-body mb-0">{data.desc}</p>
+                                        </a>
                                     </div>
-                                </div>
-                                <h5 className="mb-3">Rooms &amp; Appartment</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-utensils fa-2x text-primary" />
-                                    </div>
-                                </div>
-                                <h5 className="mb-3">Food &amp; Restaurant</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-spa fa-2x text-primary" />
-                                    </div>
-                                </div>
-                                <h5 className="mb-3">Spa &amp; Fitness</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-swimmer fa-2x text-primary" />
-                                    </div>
-                                </div>
-                                <h5 className="mb-3">Sports &amp; Gaming</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-glass-cheers fa-2x text-primary" />
-                                    </div>
-                                </div>
-                                <h5 className="mb-3">Event &amp; Party</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                            <a className="service-item rounded" href>
-                                <div className="service-icon bg-transparent border rounded p-1">
-                                    <div className="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                        <i className="fa fa-dumbbell fa-2x text-primary" />
-                                    </div>
-                                </div>
-                                <h5 className="mb-3">GYM &amp; Yoga</h5>
-                                <p className="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            </a>
-                        </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
             {/* Service End */}
-              {/* Testimonial Start */}
-      <div className="container-xxl testimonial mt-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s" style={{ marginBottom: 90 }}>
-        <div className="container">
-          <div className=" testimonial-carousel py-5">
-            <div className="testimonial-item position-relative bg-white rounded overflow-hidden">
-             
-              <div className="d-flex align-items-center">
-                <img className="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style={{ width: 60, height: 60 }} />
-                <div className="ps-3">
-                  <h6 className="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                   <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                </div>
-              </div>
-              {/* <i className="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1" /> */}
+            {/* Testimonial Start */}
+            <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+                {/* <h6 className="section-title text-center text-primary text-uppercase">Our Team</h6> */}
+                <h1 className="mb-5"> Our <span className="text-primary text-uppercase">Clients & Their Review </span></h1>
             </div>
-            <div className="testimonial-item position-relative bg-white rounded overflow-hidden my-3 ">
-             <div className="d-flex align-items-center">
-                <img className="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style={{ width: 60, height: 60 }} />
-                <div className="ps-3">
-                  <h6 className="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                   <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-              
+
+            <div className="container-xxl testimonial mt-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s" style={{ marginBottom: 90 }}>
+
+                <div className="container">
+
+                    <div className=" testimonial-carousel py-5">
+                        {
+                            test && test.map((data) => {
+                                console.log(data)
+                                return (
+                                    <div className="testimonial-item position-relative bg-white rounded overflow-hidden mb-5">
+
+                                        <div className="d-flex align-items-center">
+                                            <img className="img-fluid flex-shrink-0 rounded" src={data.img} style={{ width: 60, height: 60 }} />
+                                            <div className="ps-3">
+                                                <h5 className="fw-bold mb-1">{data.name}</h5>
+                                                <small>{data.profession}</small>
+                                                <p>{data.review}</p>
+                                            </div>
+                                        </div>
+                                        {/* <i className="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1" /> */}
+                                    </div>
+                                )
+                            })
+                        }
+
+                    </div>
                 </div>
-              </div>
-              {/* <i className="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1" /> */}
             </div>
-            <div className="testimonial-item position-relative bg-white rounded overflow-hidden">
-              
-              <div className="d-flex align-items-center">
-                <img className="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style={{ width: 60, height: 60 }} />
-                <div className="ps-3">
-                  <h6 className="fw-bold mb-1">Client Name</h6>
-                  <small>Profession</small>
-                  <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
-                </div>
-              </div>
-              {/* <i className="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1" /> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Testimonial End */}
+            {/* Testimonial End */}
             {/* Team Start */}
             <div className="container-xxl py-5">
                 <div className="container">
@@ -377,70 +342,30 @@ function Home() {
                         <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Staffs</span></h1>
                     </div>
                     <div className="row g-4">
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                    <img className="img-fluid" src="img/team-1.jpg" alt />
-                                    <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-facebook-f" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-twitter" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-instagram" /></a>
+                        {
+                            team && team.map((data) => {
+                                console.log(data)
+                                return (
+                                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div className="rounded shadow overflow-hidden">
+                                            <div className="position-relative">
+                                                <img className="img-fluid" src={data.img} style={{ height: "300px" }} alt />
+                                                <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                                    <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-facebook-f" /></a>
+                                                    <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-twitter" /></a>
+                                                    <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-instagram" /></a>
+                                                </div>
+                                            </div>
+                                            <div className="text-center p-4 mt-3">
+                                                <h5 className="fw-bold mb-0">{data.name}</h5>
+                                                <small>{data.manager}</small>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                    <h5 className="fw-bold mb-0">Full Name</h5>
-                                    <small>Designation</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                    <img className="img-fluid" src="img/team-2.jpg" alt />
-                                    <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-facebook-f" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-twitter" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-instagram" /></a>
-                                    </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                    <h5 className="fw-bold mb-0">Full Name</h5>
-                                    <small>Designation</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                    <img className="img-fluid" src="img/team-3.jpg" alt />
-                                    <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-facebook-f" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-twitter" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-instagram" /></a>
-                                    </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                    <h5 className="fw-bold mb-0">Full Name</h5>
-                                    <small>Designation</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div className="rounded shadow overflow-hidden">
-                                <div className="position-relative">
-                                    <img className="img-fluid" src="img/team-4.jpg" alt />
-                                    <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-facebook-f" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-twitter" /></a>
-                                        <a className="btn btn-square btn-primary mx-1" href><i className="fab fa-instagram" /></a>
-                                    </div>
-                                </div>
-                                <div className="text-center p-4 mt-3">
-                                    <h5 className="fw-bold mb-0">Full Name</h5>
-                                    <small>Designation</small>
-                                </div>
-                            </div>
-                        </div>
+                                )
+                            })
+                        }
+
                     </div>
                 </div>
             </div>

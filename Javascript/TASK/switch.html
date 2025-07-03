@@ -1,39 +1,53 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
-        let choice = "7"
-        let a = 30,b=10;
+        let Days = "3"
 
-        switch (choice) {
-            case "+":
-                console.log("sum =>",a+b);
-                document.write("sum => ",a+b)
+        switch (Days) {
+            case "1":
+                console.log("Monday");
+                document.write("Monday");
                 break;
-            case "-":
-                console.log("sub =>",a-b);
-                document.write("sub => ",a-b)
+            case "2":
+                console.log("Tuesday");
+                document.write("Tuesday");
                 break;
-            case "*":
-                console.log("mul =>",a*b);
-                document.write("mul => ",a*b)
+            case "3":
+                console.log("Wednesday");
+                document.write("Wednesday");
                 break;
-            case "/":
-                console.log("div =>",a/b);
-                document.write("div => ",a/b)
+            case "4":
+                console.log("Thursday");
+                document.write("Thursday");
+                break;
+            case "5":
+                console.log("Friday");
+                document.write("Friday");
+                break;
+            case "6":
+                console.log("Saturday");
+                document.write("Saturday");
+                break;
+            case "7":
+                console.log("Sunday");
+                document.write("Sunday");
                 break;
             default:
-                console.log("invalid case");
-                document.write("inv")
+                console.log("Not a day");
+                document.write("Not a day")
                 break;
         }
     </script>
 </body>
+
 </html>
