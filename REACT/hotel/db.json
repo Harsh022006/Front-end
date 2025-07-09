@@ -63,6 +63,15 @@
       "bed": "2",
       "Bath": "4",
       "desc": "This is the best hall and balcony view in this hotel 4"
+    },
+    {
+      "id": "1752056565003",
+      "title": "Super Deluxe Rooms",
+      "price": "400$ /night",
+      "bed": "3 bed",
+      "Bath": "2 bathroom With bathtub",
+      "img": "https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Cars-Full-HD-Images-1080p.jpg",
+      "desc": "This is the best room in our hotel"
     }
   ],
   "about": [
