@@ -1,23 +1,23 @@
 {
   "user": [
     {
-      "id": "1752661550657",
-      "title": "deluxe Room dsg",
-      "img": "https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Cars-Full-HD-Images-1080p.jpg",
-      "desc": "hello"
+      "id": "1752917524206",
+      "title": "the car",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.qQuPZFOp3gjt8L4mDoEjCwHaEo&pid=Api&P=0&h=180",
+      "desc": "This is a car"
     }
   ],
   "admin": [
     {
       "id": "1",
-      "name": "user1",
-      "email": "user1@gmail.com",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
       "password": "123456"
     },
     {
       "id": "2",
-      "name": "user2",
-      "email": "user2@gmail.com",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
       "password": "1234"
     }
   ]
