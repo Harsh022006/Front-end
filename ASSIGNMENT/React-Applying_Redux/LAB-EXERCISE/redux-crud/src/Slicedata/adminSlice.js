@@ -68,11 +68,11 @@ export const adminSlice = createSlice({
             state.loading = true;
         },
         adminFullfiled: (state, action) => {
-            state.loading = false,
+            state.loading = false;
                 state.admin.push(action.payload)
         },
         adminReject: (state, action) => {
-            state.loading = false,
+            state.loading = false;
                 state.error = action.payload
         }
     },
@@ -106,7 +106,7 @@ export const adminSlice = createSlice({
             // delete
 
             .addCase(deleteadmin.pending, (state) => {
-                state.loading = true
+                state.loading = true;
             })
             .addCase(deleteadmin.fulfilled, (state, action) => {
                 state.loading = false;
@@ -127,7 +127,7 @@ export const adminSlice = createSlice({
 
                 state.admin = state.admin.map((ele)=>
             
-                ele.id = action.payload.id ? action.payload : ele
+                ele.id === action.payload.id ? action.payload : ele
 
             );
             })
