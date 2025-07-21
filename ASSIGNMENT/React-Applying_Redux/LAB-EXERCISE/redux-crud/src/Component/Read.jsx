@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 function Read() {
   const admins = useSelector((state) => state.admins.admin)
 
-    // console.log(users)
 
     const dispatch = useDispatch()
 

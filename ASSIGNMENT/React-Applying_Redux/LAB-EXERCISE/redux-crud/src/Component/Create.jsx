@@ -19,7 +19,6 @@ function Create() {
       id:new Date().getTime().toString(),
       [e.target.name]:e.target.value
     })
-    // console.log(form)
   }
 
   const dispatch = useDispatch()
