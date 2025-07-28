@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "harsh",
-      "email": "harsh@gmail.com",
+      "email": "harsh1@gmail.com",
       "password": "1234",
       "status": "unblock"
     },
@@ -20,19 +20,26 @@
       "email": "prem@gmail.com",
       "password": "123456",
       "status": "block"
+    },
+    {
+      "id": "1753710466793",
+      "name": "raaj",
+      "email": "raj@gmail.com",
+      "password": "142536",
+      "status": "unblock"
     }
   ],
   "admin": [
     {
       "id": "1",
-      "name": "user1",
-      "email": "user1@gmail.com",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
       "password": "123456"
     },
     {
       "id": "2",
-      "name": "user2",
-      "email": "user2@gmail.com",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
       "password": "1234"
     }
   ],
@@ -63,15 +70,6 @@
       "bed": "2",
       "Bath": "4",
       "desc": "This is the best hall and balcony view in this hotel 4"
-    },
-    {
-      "id": "1752056565003",
-      "title": "Super Deluxe Rooms",
-      "price": "400$ /night",
-      "bed": "3 bed",
-      "Bath": "2 bathroom With bathtub",
-      "img": "https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Cars-Full-HD-Images-1080p.jpg",
-      "desc": "This is the best room in our hotel"
     }
   ],
   "about": [

@@ -1,7 +1,25 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Aheader() {
+
+     const redirect = useNavigate()
+
+    useEffect(() => {
+        if (!localStorage.getItem("Aid")) {
+            redirect("/Alogin")
+        }
+    })
+
+
+    const logout = () => {
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/Alogin")
+         toast.success("Admin Logout..!")
+    }
+
     return (
         <div>
             {/* Header Start */}
@@ -71,7 +89,37 @@ function Aheader() {
                                     </div>
                                     {/* <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink> */}
                                 </div>
-                                <a className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a>
+                                {/* <a className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a> */}
+                                {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <>
+                                                    <NavLink  className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Hey..! &nbsp; {localStorage.getItem("Aname")}</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                        })()
+                                    }
+                                     {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <>
+                                                        <NavLink onClick={logout} className="btn btn-danger p-4">logout</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                    <>
+                                                        <NavLink to="/Alogin" className="nav-item nav-link">ALogin</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                        })()
+                                    }
+
                             </div>
                         </nav>
                     </div>

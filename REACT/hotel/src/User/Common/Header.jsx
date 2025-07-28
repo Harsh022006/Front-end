@@ -1,7 +1,24 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Uid")){
+            redirect("/login")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        redirect("/login")
+        toast.success("user logout successfully")
+    }
+
     return (
         <div>
             {/* Header Start */}
@@ -58,7 +75,34 @@ function Header() {
                                     </div>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                                 </div>
-                                <a className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a>
+                                {/* <a className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3" /></a> */}
+                                 {(()=>{
+                                        if(localStorage.getItem("Uid")){
+                                            return(
+                                                <>
+                                                     <NavLink to="/edit" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Hey..! &nbsp; {localStorage.getItem("Uname")}</NavLink>
+                                                </>
+                                            )
+                                        }
+                                    })()}
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Uid")){
+                                                return(
+                                                    <>
+                                                         <NavLink onClick={logout} className="btn btn-danger p-4">Logout</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                    <>
+                                                         <NavLink to="/login" className="nav-item nav-link">login</NavLink>
+                                                    </>
+                                                )
+                                            }
+                                        })()
+                                    }
                             </div>
                         </nav>
                     </div>

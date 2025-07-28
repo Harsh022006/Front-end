@@ -18,13 +18,18 @@ import Aboutadd from './Admin/Apages/Aboutadd'
 import Aboutmanage from './Admin/Apages/Aboutmanage'
 import Teamadd from './Admin/Apages/Teamadd'
 import Teammanage from './Admin/Apages/Teammanage'
-
+import Alogin from './Admin/Apages/Alogin'
+import { ToastContainer } from 'react-toastify';
+import Login from './User/Pages/Login'
+import Register from './User/Pages/Register'
+import Editprofile from './User/Pages/Editprofile'
 
 function App() {
   return (
     
     <div>
       <BrowserRouter>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Room" element={<Room />} />
@@ -44,6 +49,10 @@ function App() {
         <Route path="/aboutmanage" element={<Aboutmanage />} />
         <Route path="/teamadd" element={<Teamadd />} />
         <Route path="/teammanage" element={<Teammanage />} />
+        <Route path="/Alogin" element={<Alogin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/edit" element={<Editprofile />} />
       </Routes>
       </BrowserRouter>
     </div>
